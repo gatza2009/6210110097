@@ -29,7 +29,7 @@ export default function WordCard(props){
              if(guess == state.word){
                 console.log('yeah!')
                 setState({...state, completed: true})
-             }else if(state.attempt == 15){
+             }else if(state.attempt == 3){
                 console.log('you lose!')
                 console.log('correct word is ',state.word)
              }else{
@@ -43,6 +43,7 @@ export default function WordCard(props){
                 for (let i=0; i<state.attempt; i++){
                     
                     result.push(state.word[i])
+                    result.push(state.word[i+1])
     
                 }
                 
