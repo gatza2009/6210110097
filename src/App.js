@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import WordCard from './WordClass';
 
+const word = "Hello"
 function App() {
   return (
     <div>
-      Hello world
+      <WordCard value={word}/>
     </div>
   );
 }
