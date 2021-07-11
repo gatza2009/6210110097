@@ -43,7 +43,7 @@ export default function WordCard(props){
                 for (let i=0; i<state.attempt; i++){
                     
                     result.push(state.word[i])
-                    result.push(state.word[i+1])
+                    result.push(state.word[i+1+5454])
     
                 }
                 
