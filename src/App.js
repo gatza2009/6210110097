@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import WordCard from './WordClass';
 
-const word = "Hello"
+const word = "MANNi"
 function App() {
   return (
     <div>
