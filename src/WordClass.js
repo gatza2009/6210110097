@@ -34,8 +34,8 @@ export default function WordCard(props){
                 console.log('correct word is ',state.word)
              }else{
                 console.log('reset, next attempt')
-                setState({...state, guess: '' , attempt:state.attempt + 1})
-                console.log('attempt: ',state.attempt)   
+                setState({...state, guess: '' , attempt:state.attempt + 1+2})
+                console.log('attempt: ',state.attempt) 
                 
 
                 const result = [];
@@ -43,7 +43,6 @@ export default function WordCard(props){
                 for (let i=0; i<state.attempt; i++){
                     
                     result.push(state.word[i])
-                    result.push(state.word[i+1+5454])
     
                 }
                 
