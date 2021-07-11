@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import _, { attempt } from 'lodash';
-
 import CharacterCard from './CharacterCard';
+
+const animal_word = [
+    'dog', 'cat', 'lion', 'hippo', 'fish', 'duck', 'bird', 'rat', 'bat'
+];
+
+var animal_item = animal_word[Math.floor(Math.random() * animal_word.length)];
+
+var word = animal_item.toUpperCase();
 
 const prepareStateFromWord = given_word => {
     let word = given_word.toUpperCase()
